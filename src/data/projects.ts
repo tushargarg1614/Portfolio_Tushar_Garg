@@ -60,7 +60,7 @@
   {
     name: "Ravel",
     type: "TEAM CONTRIBUTION",
-    url: null,
+    url: "https://personal.ravel.faith/#/",
     desc: "A connected four-platform community ecosystem for individuals, merchants and ministries.",
     tags: [
       "Four Platforms",
@@ -75,6 +75,7 @@
       {
         name: "Ravel Personal",
         image: "/projects/RavelLogo.png",
+        url: "https://personal.ravel.faith/#/",
         description:
           "User-facing community platform connecting individuals with communities, businesses and faith-based resources.",
         features: [
@@ -87,6 +88,7 @@
       {
         name: "Ravel Merchant",
         image: "/projects/ravel-merchant-logo.png",
+        url: "https://merchant.ravel.faith/#/",
         description:
           "Merchant and business platform for visibility and customer engagement.",
         features: [
@@ -99,6 +101,7 @@
       {
         name: "Ravel Ministry",
         image: "/projects/ravel-ministry-logo.png",
+        url: "https://ministry.ravel.faith/#/",
         description:
           "Platform for churches, ministries and faith-based organisations.",
         features: [
@@ -111,6 +114,7 @@
       {
         name: "Ravel Admin",
         image: "/projects/ravel-admin-logo.png",
+        
         description:
           "Administrative platform supporting the connected Ravel ecosystem.",
         features: [],
