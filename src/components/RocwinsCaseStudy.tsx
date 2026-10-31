@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { rocwinModules, rocwinProject } from "@/data/projects";
 import { fadeIn } from "@/lib/presentation";
+import ProjectImage from "@/components/ProjectImage";
 function Architecture() {
   const apps = [
     ["01", "Customer web app", "Commerce · RFQ · Accounts"],
@@ -53,15 +54,24 @@ export default function RocwinsCaseStudy() {
           <h3>{rocwinProject.name}</h3>
           <p className="feature-subtitle">{rocwinProject.title}</p>
         </div>
-        <a
-          className="round-link"
-          href={rocwinProject.url}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Visit Rocwins website"
-        >
-          <ArrowUpRight />
-        </a>
+        <div className="feature-top-actions">
+          <ProjectImage
+            src={rocwinProject.logo}
+            label="Rocwins company logo"
+            className="company-logo-frame"
+            placeholderText="ADD COMPANY LOGO"
+            placeholderMark="R"
+          />
+          <a
+            className="round-link"
+            href={rocwinProject.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Rocwins website"
+          >
+            <ArrowUpRight />
+          </a>
+        </div>
       </div>
       <div className="feature-body">
         <div className="feature-description">
@@ -81,7 +91,7 @@ export default function RocwinsCaseStudy() {
             className="feature-link"
             href={rocwinProject.url}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Visit live platform <ArrowUpRight size={15} />
           </a>

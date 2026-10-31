@@ -1,24 +1,26 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { experiences } from "@/data/experience";
 import { SectionTitle, fadeIn } from "@/lib/presentation";
+
 export default function Experience() {
   return (
     <section id="experience" className="section shell">
       <SectionTitle
         eyebrow="02 / EXPERIENCE"
-        description="Growing through real product work, delivery and long-lived systems."
+        description="Product delivery, AI integration and production systems across client teams."
       >
         The work, <em>in context.</em>
       </SectionTitle>
       <div className="timeline">
-        {experiences.map((job, i) => (
+        {experiences.map((job, index) => (
           <motion.article
             {...fadeIn}
             className="timeline-item"
             key={job.company}
           >
-            <div className="timeline-marker">0{i + 1}</div>
+            <div className="timeline-marker">0{index + 1}</div>
             <div className="timeline-main">
               <div className="timeline-heading">
                 <div>
@@ -27,11 +29,29 @@ export default function Experience() {
                 </div>
                 <span>{job.date}</span>
               </div>
-              <ul>
-                {job.points.map((point) => (
-                  <li key={point}>{point}</li>
+              <p className="experience-summary">{job.summary}</p>
+              <div className="experience-groups">
+                {job.groups.map((group) => (
+                  <section className="experience-group" key={group.title}>
+                    <h4>{group.title}</h4>
+                    <ul>
+                      {group.items.map((item) => (
+                        <li key={item.label}>
+                          <strong>{item.label}:</strong> {item.detail}
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
                 ))}
-              </ul>
+              </div>
+              <div className="experience-stack" aria-label="Technologies used">
+                <span className="experience-stack-label">TECHNOLOGIES</span>
+                <div className="tag-row">
+                  {job.technologies.map((technology) => (
+                    <span key={technology}>{technology}</span>
+                  ))}
+                </div>
+              </div>
             </div>
           </motion.article>
         ))}
