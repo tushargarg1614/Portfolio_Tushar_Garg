@@ -30,7 +30,7 @@ export const skills = [
   {
     icon: Bot,
     name: "AI & Emerging Tech",
-    list: "Google Gemini API · Generative AI · RAG · LLMs · Embeddings · Vector Search · OCR",
+    list: "Google Gemini API · Generative AI · RAG · LLMs · Embeddings · Vector Search ",
   },
   {
     icon: BriefcaseBusiness,

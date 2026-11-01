@@ -38,7 +38,7 @@ export default function AISection() {
           <h3>Build capability into products.</h3>
           <p>
             Hands-on implementation of RAG chatbots, LLM integrations, vector
-            search, document processing, OCR and structured extraction, product
+            search, document processing, product
             recommendations and AI-assisted business workflows.
           </p>
           <div className="approach-line">

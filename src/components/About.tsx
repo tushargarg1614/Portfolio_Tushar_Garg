@@ -28,7 +28,7 @@ export default function About() {
           </p>
           <div className="about-facts">
             <div>
-              <b>01.5</b>
+              <b>1.5+</b>
               <span>YEARS IN PRODUCT TEAMS</span>
             </div>
             <div>

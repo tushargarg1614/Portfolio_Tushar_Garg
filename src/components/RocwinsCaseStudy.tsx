@@ -33,7 +33,7 @@ function Architecture() {
         <div>
           <span className="eyebrow">SHARED INTELLIGENCE</span>
           <b>Centralized AI Engine</b>
-          <small>RAG · LLMs · OCR · Vector Search</small>
+          <small>RAG · LLMs · Vector Search</small>
         </div>
       </div>
       <div className="arch-foot">
@@ -111,7 +111,7 @@ export default function RocwinsCaseStudy() {
         <Sparkles size={16} />
         <p>
           <b>Centralized AI engine</b> — Reusable AI APIs support document
-          processing, embeddings, vector retrieval, OCR extraction,
+          processing, embeddings, vector retrieval,
           recommendations, workflow assistance, confidence scoring, guardrails
           and activity logging.
         </p>
