@@ -201,7 +201,7 @@
 export const rocwinProject = {
   name: "Rocwins Inc.",
   title: "AI-Powered B2B Commerce & Business Automation Platform",
-  url: "http://34.83.82.212/",
+  url: "http://34.93.82.212/",
   logo: "/projects/rocwins_logo.png",
   technologies: [
     "Next.js",
